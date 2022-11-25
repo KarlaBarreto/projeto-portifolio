@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {    
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background: url('imagens/fundo-madeira.jpg') no-repeat top center;   
+    background-size: cover; 
+    background-attachment: fixed;   
+}
+
+main {
+    position: relative;
+    height: 100vh;    
+}
+
+section#telefone {
+    position: absolute;
+    top: 50%; /*para centralizar a imagem do telefone*/
+    left: 50%; /*para centralizar a imagem do telefone*/
+    transform: translate(-50%, -50%); /*para centralizar a imagem do telefone*/
+    height: 627px;
+    width: 311px;
+    background-image: url('imagens/frame-iphone.png');
+    background-repeat: no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px; /*adaptar a imagem home no top do display do telefone*/
+    left: 22px; /*adaptar a imagem home nos lados do display do telefone*/
+    width: 269px; /*largura ideal para a imagem cobrir o display do telefone*/
+    height: 471px; /*altura ideial para a imagem cobrir o display do telefone*/
+}
+
+section#redes-sociais {
+    text-align: right; /*somente para mudar o lado dos icones das redes sociais*/
+}
+
+section#redes-sociais img {
+    width: 50px; 
+    margin: 10px; /*para espaçar um icone do outro*/
+    border-radius: 50%; /*para arredondar o icone das redes sociais*/
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid white;
+}
